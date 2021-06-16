@@ -256,6 +256,7 @@ footer .container{
 }
 
 .img{
+    display: block;
     width: 140px;
     height: 20px;
     margin-bottom: 55px;
