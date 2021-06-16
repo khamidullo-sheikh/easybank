@@ -18,19 +18,31 @@ nav{
 }
 
 nav .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .nav-brand{
     width: 140px;
     height: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
 }
 
 .nav-menu{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     left: 25px;
@@ -46,6 +58,7 @@ nav .container{
     font-size: 140%;
     line-height: 16px;
     color: var(--light_grey);
+    -webkit-transition: color .3s ease;
     transition: color .3s ease;
     position: relative;
 }
@@ -56,6 +69,7 @@ nav .container{
     width: 100%;
     height: 3px;
     background: transparent;
+    -webkit-transition: background .3s ease;
     transition: background .3s ease;
 }
 
@@ -76,7 +90,11 @@ header section{
 }
 
 header section .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -128,6 +146,8 @@ header section .container::before{
 }
 
 .boxes{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -181,6 +201,8 @@ header section .container::before{
 }
 
 .blocks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -202,10 +224,14 @@ header section .container::before{
 }
 
 .image:hover img{
-    transition: transform .3s ease;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    colotransition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 .image:hover img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -226,6 +252,8 @@ header section .container::before{
     font-size: 160%;
     line-height: 20px;
     margin-bottom: 8px;
+    color: var(--dark_grey);
+    -webkit-transition: color .3s ease;
     transition: color .3s ease;
 }
 
@@ -251,7 +279,11 @@ footer{
 }
 
 footer .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -263,6 +295,8 @@ footer .container{
 }
 
 .icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     left: -18px;
@@ -278,11 +312,14 @@ footer .container{
     display: block;
     font-size: 25px;
     color: #fff;
+    -webkit-transition: color .3s ease;
     transition: color .3s ease;
 }
 
 
 #list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -307,6 +344,7 @@ footer .container{
     font-size: 150%;
     line-height: 26px;
     color: #fff;
+    -webkit-transition: color .3s ease;
     transition: color .3s ease;
 }
 
